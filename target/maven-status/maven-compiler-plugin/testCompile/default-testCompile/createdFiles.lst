@@ -1,0 +1,3 @@
+com\newidor\demo\dubbo\provider\DemoProvider.class
+com\newidor\demo\dubbo\provider\LuncherProvider.class
+com\newidor\demo\dubbo\consumer\DemoConsumer.class

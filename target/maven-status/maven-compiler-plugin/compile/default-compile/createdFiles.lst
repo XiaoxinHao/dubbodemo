@@ -1,0 +1,14 @@
+com\newidor\demo\dubbo\provider\CallbackServiceImpl$1.class
+com\newidor\demo\dubbo\consumer\DemoAction$2.class
+com\newidor\demo\dubbo\provider\NIOServiceImpl.class
+com\newidor\demo\dubbo\provider\DemoServiceImpl.class
+com\newidor\demo\dubbo\consumer\DemoAction$1.class
+com\newidor\demo\dubbo\provider\CallbackServiceImpl.class
+com\newidor\demo\dubbo\api\Person.class
+com\newidor\demo\dubbo\provider\CacheServiceImpl.class
+com\newidor\demo\dubbo\api\NIOService.class
+com\newidor\demo\dubbo\api\CacheService.class
+com\newidor\demo\dubbo\api\CallbackService.class
+com\newidor\demo\dubbo\api\CallbackListener.class
+com\newidor\demo\dubbo\api\DemoService.class
+com\newidor\demo\dubbo\consumer\DemoAction.class

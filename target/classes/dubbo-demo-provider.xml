@@ -12,31 +12,31 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-	<bean id="demoService" class="com.alibaba.dubbo.demo.provider.DemoServiceImpl" />
+	<bean id="demoService" class="com.newidor.demo.dubbo.provider.DemoServiceImpl" />
 
-	<dubbo:service interface="com.alibaba.dubbo.demo.DemoService"
+	<dubbo:service interface="com.newidor.demo.dubbo.api.DemoService"
 		ref="demoService" />
 
-	<bean id="cacheService" class="com.alibaba.dubbo.demo.provider.CacheServiceImpl" />
+	<bean id="cacheService" class="com.newidor.demo.dubbo.provider.CacheServiceImpl" />
 
-	<dubbo:service interface="com.alibaba.dubbo.demo.CacheService"
+	<dubbo:service interface="com.newidor.demo.dubbo.api.CacheService"
 		ref="cacheService" />
 
-	<bean id="callbackService" class="com.alibaba.dubbo.demo.provider.CallbackServiceImpl" />
+	<bean id="callbackService" class="com.newidor.demo.dubbo.provider.CallbackServiceImpl" />
 
-	<dubbo:service interface="com.alibaba.dubbo.demo.CallbackService"
+	<dubbo:service interface="com.newidor.demo.dubbo.api.CallbackService"
 		ref="callbackService" connections="1" callbacks="1000">
 		<dubbo:method name="addListener">
 			<dubbo:argument index="1" callback="true" />
 			<!--也可以通过指定类型的方式 -->
-			<dubbo:argument type="com.alibaba.dubbo.demo.CallbackListener"
+			<dubbo:argument type="com.newidor.demo.dubbo.api.CallbackListener"
 				callback="true" />
 		</dubbo:method>
 	</dubbo:service>
-	
-	<bean id="nioService" class="com.alibaba.dubbo.demo.provider.NIOServiceImpl" />
-	
-	<dubbo:service interface="com.alibaba.dubbo.demo.NIOService"
+
+	<bean id="nioService" class="com.newidor.demo.dubbo.provider.NIOServiceImpl" />
+
+	<dubbo:service interface="com.newidor.demo.dubbo.api.NIOService"
 		ref="nioService" />
 
 

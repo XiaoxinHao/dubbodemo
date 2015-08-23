@@ -20,9 +20,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-	<dubbo:reference id="demoService" interface="com.alibaba.dubbo.demo.DemoService" />
-	<dubbo:reference id="cacheService" interface="com.alibaba.dubbo.demo.CacheService" cache="true"/>
-	<dubbo:reference id="callbackService" interface="com.alibaba.dubbo.demo.CallbackService"/>
-	<dubbo:reference id="nioService" interface="com.alibaba.dubbo.demo.NIOService" async="true"/>
+	<dubbo:reference id="demoService" interface="com.newidor.demo.dubbo.api.DemoService" />
+	<dubbo:reference id="cacheService" interface="com.newidor.demo.dubbo.api.CacheService" cache="true"/>
+	<dubbo:reference id="callbackService" interface="com.newidor.demo.dubbo.api.CallbackService"/>
+	<dubbo:reference id="nioService" interface="com.newidor.demo.dubbo.api.NIOService" async="true"/>
 
 </beans>
